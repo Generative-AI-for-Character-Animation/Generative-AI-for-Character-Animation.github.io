@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions"
+    />
+    <meta
+      name="keywords"
+      content="generative ai, character animation, ai animation, diffusion models, motion synthesis, facial animation, avatar creation, gesture modeling, texture synthesis, survey, ai survey"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mohammad Mahdi Abootorabi et al." />
+    <meta
+      property="og:title"
+      content="Generative AI for Character Animation Survey"
+    />
+    <meta
+      property="og:description"
+      content="A comprehensive survey on generative AI techniques for character animation"
+    />
+    <meta property="og:image" content="./static/images/paper-preview.jpg" />
+    <meta
+      property="og:url"
+      content="https://llm-lab-org.github.io/Generative-AI-for-Character-Animation-Survey/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Generative AI for Character Animation Survey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
+    <script src="./static/js/custom.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-title">Character Animation AI</div>
+        <ul class="nav-links">
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#taxonomy">Taxonomy</a></li>
+          <li><a href="#applications">Applications</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="container">
+        <h1>Generative AI for Character Animation</h1>
+        <h2>
+          A Comprehensive Survey of Techniques, Applications, and Future
+          Directions
+        </h2>
+
+        <div class="authors">
+          <span><a href="#">Mohammad Mahdi Abootorabi</a></span
+          >, <span><a href="#">Omid Ghahroodi</a></span
+          >, <span><a href="#">Pardis Sadat Zahraei</a></span
+          >, <span><a href="#">Hossein Behzadasl</a></span
+          >, <span><a href="#">Alireza Mirrokni</a></span
+          >, <span><a href="#">Mobina Salimipanah</a></span
+          >, <span><a href="#">Arash Rasouli</a></span
+          >, <span><a href="#">Bahar Behzadipour</a></span
+          >, <span><a href="#">Sara Azarnoush</a></span
+          >, <span><a href="#">Benyamin Maleki</a></span
+          >, <span><a href="#">Erfan Sadraiye</a></span
+          >, <span><a href="#">Kiarash Kiani Feriz</a></span
+          >, <span><a href="#">Mahdi Teymouri Nahad</a></span
+          >, <span><a href="#">Ali Moghadasi</a></span
+          >, <span><a href="#">Abolfazl Eshagh Abianeh</a></span
+          >, <span><a href="#">Nizi Nazar</a></span
+          >, <span><a href="#">Hamid R. Rabiee</a></span
+          >, <span><a href="#">Mahdieh Soleymani Baghshah</a></span
+          >, <span><a href="#">Meisam Ahmadi</a></span
+          >,
+          <span><a href="#">Ehsaneddin Asgari</a></span>
+        </div>
+
+        <div class="links">
+          <a href="https://arxiv.org/pdf/2504.19056" class="button">Paper</a>
+          <a href="https://arxiv.org/abs/2504.19056" class="button">arXiv</a>
+          <a
+            href="https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey"
+            class="button"
+            >GitHub</a
+          >
+        </div>
+      </section>
+
+      <section id="abstract" class="container">
+        <h3>Abstract</h3>
+        <p>
+          Generative AI is reshaping art, gaming, and most notably animation.
+          Recent breakthroughs in foundation and diffusion models have reduced
+          the time and cost of producing animated content. Characters are
+          central animation components, involving motion, emotions, gestures,
+          and facial expressions. The pace and breadth of advances in recent
+          months make it difficult to maintain a coherent view of the field,
+          motivating the need for an integrative review. Unlike earlier
+          overviews that treat avatars, gestures, or facial animation in
+          isolation, this survey offers a single, comprehensive perspective on
+          all the main generative AI applications for character animation. We
+          begin by examining the state-of-the-art in facial animation,
+          expression rendering, image synthesis, avatar creation, gesture
+          modeling, motion synthesis, object generation, and texture synthesis.
+          We highlight leading research, practical deployments, commonly used
+          datasets, and emerging trends for each area. To support newcomers, we
+          also provide a comprehensive background section that introduces
+          foundational models and evaluation metrics, equipping readers with the
+          knowledge needed to enter the field. We discuss open challenges and
+          map future research directions, providing a roadmap to advance
+          AI-driven character-animation technologies. This survey is intended as
+          a resource for researchers and developers entering the field of
+          generative AI animation or adjacent fields.
+        </p>
+      </section>
+
+      <section id="overview" class="container">
+        <h3>Overview</h3>
+        <figure>
+          <img
+            src="static/images/overview.png"
+            alt="Overview of generative AI for character animation"
+          />
+          <figcaption>
+            Figure 1: An overview of the generative AI techniques for character
+            animation covered in this survey.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="taxonomy" class="container">
+        <h3>Taxonomy</h3>
+        <figure>
+          <img
+            src="static/images/Taxonomy.jpg"
+            alt="Taxonomy of generative AI for character animation"
+          />
+          <figcaption>
+            Figure 2: Taxonomy of character animation techniques using
+            generative AI.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="applications" class="container">
+        <h3>Key Applications</h3>
+        <div class="applications-grid">
+          <div class="application">
+            <h4>Facial Animation</h4>
+            <p>
+              Creating realistic facial expressions and animations for virtual
+              characters using generative models.
+            </p>
+          </div>
+          <div class="application">
+            <h4>Motion Synthesis</h4>
+            <p>
+              Generating natural and diverse character movements and animations
+              based on various inputs.
+            </p>
+          </div>
+          <div class="application">
+            <h4>Gesture Modeling</h4>
+            <p>
+              Creating realistic hand and body gestures for virtual characters,
+              enhancing communication and expressiveness.
+            </p>
+          </div>
+          <div class="application">
+            <h4>Avatar Creation</h4>
+            <p>
+              Generating personalized 3D avatars from images or other inputs
+              with high fidelity and customization options.
+            </p>
+          </div>
+          <div class="application">
+            <h4>Texture Synthesis</h4>
+            <p>
+              Creating detailed and realistic textures for 3D models to enhance
+              visual quality and realism.
+            </p>
+          </div>
+          <div class="application">
+            <h4>Object Generation</h4>
+            <p>
+              Creating 3D models and assets for animation scenes and
+              environments with generative AI techniques.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="future" class="container">
+        <h3>Future Directions</h3>
+        <ul class="future-list">
+          <li>
+            <h4>Neural Rendering</h4>
+            <p>
+              Advancements in neural rendering will enable more photorealistic
+              character animations with less computational overhead.
+            </p>
+          </li>
+          <li>
+            <h4>Cross-Modal Learning</h4>
+            <p>
+              Integrating multiple modalities like audio, video, and text to
+              create more coherent and contextually appropriate animations.
+            </p>
+          </li>
+          <li>
+            <h4>Real-time Adaptation</h4>
+            <p>
+              Characters that can adapt their animations in real-time based on
+              user interactions and environmental context.
+            </p>
+          </li>
+          <li>
+            <h4>Multi-character Interaction</h4>
+            <p>
+              Advanced models for generating natural interactions between
+              multiple characters in a scene.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          <a
+            href="https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey"
+            >GitHub Repository</a
+          >
+        </p>
+        <p><small>© 2025</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

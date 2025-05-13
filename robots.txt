@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://llm-lab-org.github.io/Generative-AI-for-Character-Animation-Survey/sitemap.xml 
