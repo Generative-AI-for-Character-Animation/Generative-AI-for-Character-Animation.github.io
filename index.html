@@ -34,6 +34,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="google-site-verification"
+      content="nUreuoNxK05K-jZ2-6gkoIi9XAkXKHMO9WRZuCZCdLo"
+    />
     <link rel="stylesheet" href="./static/css/index.css" />
     <link rel="icon" href="./static/images/favicon.svg" />
     <script src="./static/js/custom.js"></script>
@@ -47,7 +51,7 @@
           <li><a href="#abstract">Abstract</a></li>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#taxonomy">Taxonomy</a></li>
-          <li><a href="#applications">Applications</a></li>
+          <li><a href="#areas">Areas</a></li>
         </ul>
         <button class="menu-toggle" aria-label="Toggle menu">
           <span></span>
@@ -66,31 +70,32 @@
         </h2>
 
         <div class="authors">
-          <span><a href="#">Mohammad Mahdi Abootorabi</a></span
-          >, <span><a href="#">Omid Ghahroodi</a></span
-          >, <span><a href="#">Pardis Sadat Zahraei</a></span
-          >, <span><a href="#">Hossein Behzadasl</a></span
-          >, <span><a href="#">Alireza Mirrokni</a></span
-          >, <span><a href="#">Mobina Salimipanah</a></span
-          >, <span><a href="#">Arash Rasouli</a></span
-          >, <span><a href="#">Bahar Behzadipour</a></span
-          >, <span><a href="#">Sara Azarnoush</a></span
-          >, <span><a href="#">Benyamin Maleki</a></span
-          >, <span><a href="#">Erfan Sadraiye</a></span
-          >, <span><a href="#">Kiarash Kiani Feriz</a></span
-          >, <span><a href="#">Mahdi Teymouri Nahad</a></span
-          >, <span><a href="#">Ali Moghadasi</a></span
-          >, <span><a href="#">Abolfazl Eshagh Abianeh</a></span
-          >, <span><a href="#">Nizi Nazar</a></span
-          >, <span><a href="#">Hamid R. Rabiee</a></span
-          >, <span><a href="#">Mahdieh Soleymani Baghshah</a></span
-          >, <span><a href="#">Meisam Ahmadi</a></span
-          >,
-          <span><a href="#">Ehsaneddin Asgari</a></span>
+          <span>Mohammad Mahdi Abootorabi</span><sup>†</sup>,
+          <span>Omid Ghahroodi</span><sup>†</sup>,
+          <span>Pardis Sadat Zahraei</span><sup>†</sup>,
+          <span>Hossein Behzadasl</span><sup>⋄</sup>,
+          <span>Alireza Mirrokni</span><sup>⋄</sup>,
+          <span>Mobina Salimipanah</span><sup>⋄</sup>, <span>Arash Rasouli</span
+          ><sup>⋄</sup>, <span>Bahar Behzadipour</span><sup>⋄</sup>,
+          <span>Sara Azarnoush</span><sup>⋄</sup>, <span>Benyamin Maleki</span
+          ><sup>⋄</sup>, <span>Erfan Sadraiye</span><sup>⋄</sup>,
+          <span>Kiarash Kiani Feriz</span><sup>⋄</sup>,
+          <span>Mahdi Teymouri Nahad</span><sup>⋄</sup>,
+          <span>Ali Moghadasi</span><sup>⋄</sup>,
+          <span>Abolfazl Eshagh Abianeh</span><sup>⋄</sup>,
+          <span>Nizi Nazar</span><sup>†</sup>, <span>Hamid R. Rabiee</span
+          ><sup>⋄</sup>, <span>Mahdieh Soleymani Baghshah</span><sup>⋄</sup>,
+          <span>Meisam Ahmadi</span><sup>§</sup>, <span>Ehsaneddin Asgari</span
+          ><sup>†</sup>
+          <div class="affiliations">
+            <sup>⋄</sup>Computer Engineering Department, Sharif University of
+            Technology, Tehran, Iran<br />
+            <sup>†</sup>Qatar Computing Research Institute, Doha, Qatar<br />
+            <sup>§</sup>Iran University of Science and Technology
+          </div>
         </div>
 
         <div class="links">
-          <a href="https://arxiv.org/pdf/2504.19056" class="button">Paper</a>
           <a href="https://arxiv.org/abs/2504.19056" class="button">arXiv</a>
           <a
             href="https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey"
@@ -156,9 +161,9 @@
         </figure>
       </section>
 
-      <section id="applications" class="container">
-        <h3>Key Applications</h3>
-        <div class="applications-grid">
+      <section id="areas" class="container">
+        <h3>Key Areas</h3>
+        <div class="areas-grid">
           <div class="application">
             <h4>Facial Animation</h4>
             <p>
@@ -208,31 +213,78 @@
         <h3>Future Directions</h3>
         <ul class="future-list">
           <li>
-            <h4>Neural Rendering</h4>
+            <h4>Data Limitations and Ethical Considerations</h4>
             <p>
-              Advancements in neural rendering will enable more photorealistic
-              character animations with less computational overhead.
+              Addressing biases, limited diversity, and insufficient annotations
+              in datasets while exploring data augmentation techniques and
+              federated learning approaches to enhance diversity while
+              respecting privacy constraints.
             </p>
           </li>
           <li>
-            <h4>Cross-Modal Learning</h4>
+            <h4>Real-Time Performance and Computational Efficiency</h4>
             <p>
-              Integrating multiple modalities like audio, video, and text to
-              create more coherent and contextually appropriate animations.
+              Optimizing inference speed without compromising animation quality
+              through model compression, quantization, and knowledge
+              distillation for real-time applications in gaming, VR, and AR.
             </p>
           </li>
           <li>
-            <h4>Real-time Adaptation</h4>
+            <h4>Controllability and User-Guided Generation</h4>
             <p>
-              Characters that can adapt their animations in real-time based on
-              user interactions and environmental context.
+              Developing effective control mechanisms such as prompt-conditioned
+              generation, reinforcement learning with human feedback, and
+              interactive editing interfaces for precise, user-controllable
+              outputs.
             </p>
           </li>
           <li>
-            <h4>Multi-character Interaction</h4>
+            <h4>Multimodal and Cross-Domain Integration</h4>
             <p>
-              Advanced models for generating natural interactions between
-              multiple characters in a scene.
+              Achieving seamless synchronization between different data streams
+              by exploring novel architectures that effectively unify text,
+              speech, motion, and visual inputs for more coherent and
+              context-aware character animations.
+            </p>
+          </li>
+          <li>
+            <h4>Robustness and Generalization Across Styles and Domains</h4>
+            <p>
+              Developing models that can adapt across different animation styles
+              and cultural variations without extensive retraining, using domain
+              adaptation techniques, few-shot learning, and transfer learning
+              approaches.
+            </p>
+          </li>
+          <li>
+            <h4>Evaluation Metrics for Character Animation</h4>
+            <p>
+              Developing user studies and perceptual metrics that assess
+              naturalness, emotional expressiveness, and engagement, along with
+              standardized evaluation frameworks tailored to generative
+              animation.
+            </p>
+          </li>
+          <li>
+            <h4>
+              Realism, Identity Preservation, Naturalness, and Interpretability
+            </h4>
+            <p>
+              Maintaining identity preservation while achieving naturalness
+              through identity-preserving loss functions, incorporating
+              biomechanical accuracy, and developing explainable AI approaches
+              for better transparency.
+            </p>
+          </li>
+          <li>
+            <h4>
+              Ethical and Societal Implications of AI-Generated Characters
+            </h4>
+            <p>
+              Addressing concerns regarding deepfake misuse, identity
+              representation, and cultural sensitivity through robust detection
+              mechanisms, watermarking techniques, and ethical guidelines for
+              AI-generated animations.
             </p>
           </li>
         </ul>
